@@ -1,0 +1,71 @@
+body {
+  background-color: #e2e6ea !important;
+  margin: 20px 20px;
+}
+section {
+  padding-top: 36px;
+}
+.border {
+  background-color: white;
+  border: 2px solid black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+}
+.btn-contact {
+  background-color: #111727;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.btn-download {
+  text-decoration: none;
+  color: black;
+}
+.sosmed {
+  font-size: 30px;
+  margin: 2px 0 0;
+  padding: 2px 0;
+  text-align: center;
+  border-color: white;
+}
+.sosmed.round {
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 130px;
+  width: 130px;
+}
+.card {
+  width: 300px;
+  margin: 10px auto;
+  padding: 0px 0px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.container-card {
+  padding: 1px 1%;
+  background-color: white;
+  text-align: center;
+}

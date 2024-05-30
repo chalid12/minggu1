@@ -1,0 +1,145 @@
+body {
+  background-color: #e2e6ea !important;
+  margin: 20px 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.nav-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  color: orangered;
+}
+
+.btn-contactt {
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+}
+section {
+  padding-top: 36px;
+}
+.border {
+  background-color: white;
+  border: 2px solid black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  padding: auto;
+}
+.grid-item p,
+h1 {
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.btn-contact {
+  background-color: #111727;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.btn-download {
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+}
+.sosmed {
+  font-size: 30px;
+  margin: 2px 0 0;
+  padding: 2px 0;
+  padding-top: 20px;
+  border-color: white;
+}
+.sosmed.round {
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 130px;
+  width: 130px;
+}
+.card {
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 0px 0px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container-card {
+  padding: 1px 1%;
+  background-color: white;
+  text-align: center;
+}
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  height: 100vh;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.label-contact {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input-contact {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(161, 161, 161);
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.submit-contact {
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: 34vw;
+}
+
+textarea.input-contact {
+  resize: none;
+  height: 200px;
+}
