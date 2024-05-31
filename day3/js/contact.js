@@ -1,39 +1,29 @@
-function submitData(event) {
-  // Mencegah form submission default
-  event.preventDefault();
-
-  // Mendapatkan nilai dari input
+function submitData() {
   const inputName = document.getElementById("inputName").value;
   const inputEmail = document.getElementById("inputEmail").value;
   const inputPhone = document.getElementById("inputPhone").value;
   const inputSubject = document.getElementById("inputSubject").value;
   const inputMessage = document.getElementById("inputMessage").value;
 
-  // Validasi input
-  if (inputName === "") {
-    alert("Name harus diisi");
-  } else if (inputEmail === "") {
-    alert("Email Harus Diisi");
-  } else if (inputPhone === "") {
-    alert("Phone Number tidak boleh K0s0n9");
-  } else if (inputSubject === "") {
-    alert("Subject tidak boleh kosong");
-  } else if (inputMessage === "") {
-    alert("Message tidak boleh kosong");
-  } else {
-    // Jika semua input valid, log data ke console
-    console.log(
-      `Name : ${inputName}\nEmail : ${inputEmail}\nPhone : ${inputPhone}\nSubject : ${inputSubject}\nMessage : ${inputMessage}`
-    );
-
-    // Mengirim email
-    const myemail = "arre@gmail.com";
-    const a = document.createElement("a");
-    a.href = `mailto:${myemail}?subject=${encodeURIComponent(
-      inputSubject
-    )}&body=${encodeURIComponent(
-      `Hello, my name is ${inputName}, and my number is ${inputPhone}. ${inputMessage}`
-    )}`;
-    a.click();
+  // Perkondisian
+  if (inputName == "") {
+    alert("Name harus diisi"); // Kondisi 1
+  } else if (inputEmail == "") {
+    alert("Email Harus Diisi"); // kondisi 2
+  } else if (inputPhone == "") {
+    alert("Phone Number tidak boleh K0s0n9"); //kondisi 3
+  } else if (inputSubject == "") {
+    alert("Subject tidak boleh kosong"); // kondisi 4
+  } else if (inputMessage == "") {
+    alert("Message tidak boleh kosong"); // kondisi 5
   }
+  console.log(
+    `Name : ${inputName}\nEmail : ${inputEmail}\nPhone : ${inputPhone}\nSubject : ${inputSubject}\nMessage : ${inputMessage}`
+  );
+
+  const myemail = "arre@gmail.com";
+
+  let a = document.createElement("a");
+  a.href = `mailto:${myemail}?subject=${inputSubject}&body=Hello my name ${inputName}, and my number ${inputPhone} ${inputMessage}`;
+  a.click();
 }
