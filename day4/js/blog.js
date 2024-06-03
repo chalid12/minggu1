@@ -14,18 +14,18 @@ function submitBlog(event) {
   let image = document.getElementById("inputImage").files[0];
 
   if (title === "") {
-    return alert("PLEASE ENTER YOUR TITLE!!");
+    return alert("input title");
   } else if (content === "") {
-    return alert("PLEASE ENTER THE DESCRIPTION!!");
+    return alert("input konten");
   } else if (!nodeJS && !reactJS && !nextJS && !typeScript) {
-    return alert("PLEASE CHOOSE YOUR TECHNOLOGIES!!");
+    return alert("harus di pilih");
   } else if (!image) {
-    return alert("PLEASE UPLOAD YOUR IMAGE!!");
+    return alert("upload photo");
   }
 
   if (new Date(enddate) < new Date(startdate)) {
     return alert(
-      "E R R O R !!! PLEASE CHECK AGAIN YOUR START DATE AND END DATE!!!!"
+      "masukan waktu yang tepat"
     );
   }
 

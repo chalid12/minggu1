@@ -11,7 +11,7 @@ function submitData() {
   } else if (inputEmail == "") {
     alert("Email Harus Diisi"); // kondisi 2
   } else if (inputPhone == "") {
-    alert("Phone Number tidak boleh K0s0n9"); //kondisi 3
+    alert("Phone Number tidak boleh kosong"); //kondisi 3
   } else if (inputSubject == "") {
     alert("Subject tidak boleh kosong"); // kondisi 4
   } else if (inputMessage == "") {
@@ -21,7 +21,7 @@ function submitData() {
     `Name : ${inputName}\nEmail : ${inputEmail}\nPhone : ${inputPhone}\nSubject : ${inputSubject}\nMessage : ${inputMessage}`
   );
 
-  const myemail = "arre@gmail.com";
+  const myemail = "chalidanwarr@gmail.com";
 
   let a = document.createElement("a");
   a.href = `mailto:${myemail}?subject=${inputSubject}&body=Hello my name ${inputName}, and my number ${inputPhone} ${inputMessage}`;
